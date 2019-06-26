@@ -3,7 +3,7 @@ var app = express();
 
 
 var employeeController=function(req, res){
-  console.log("Invoking  rest api for employee list");
+  console.log("calling  rest api employee");
   var employee = [
     {id:1, Fname:"shubham",lname:"shinde",degree:"BE E&tc",location:"dubai", sal:1200000},
     {id:2, Fname:"ram",lname:"patil",degree:"BE civil",location:"pune", sal:150000},
@@ -19,5 +19,5 @@ app.get ('/employee',employeeController);
 var server = app.listen(9000, function () {
   var host = server.address().address
   var port = server.address().port
-  console.log("Example app listening at http://localhost:9000")
+  console.log("Example app listening at 9000")
 })
